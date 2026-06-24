@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Categories | Food Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="background-effects">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1 id="main-title" class="page-title">Explore Categories</h1>
+            <p id="main-subtitle" class="page-subtitle">Discover a world of flavors and culinary delights</p>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for a meal (e.g. Arrabiata)...">
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+        </header>
+
+        <button id="back-btn" class="back-btn hidden">&larr; Back to Categories</button>
+
+        <div id="loader" class="loader-container">
+            <div class="spinner"></div>
+            <p>Fetching deliciousness...</p>
+        </div>
+        <div id="categories-grid" class="categories-grid hidden">
+        </div>
+        <div id="dishes-grid" class="categories-grid hidden">
+        </div>
+        <div id="meal-modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-modal" class="close-btn">&times;</span>
+                <div id="meal-details-body">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
